@@ -3,6 +3,7 @@ import './App.css'
 import CartResidents from './components/CartResidents'
 import LocationInfo from './components/LocationInfo'
 import useFetch from './hooks/useFetch'
+import banner from '../public/rick-morty-banner.jpg'
 
 function App() {
 
@@ -14,9 +15,9 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Rick and Morty</h1>
+      <img className='banner' src={banner} alt="" />
       <LocationInfo location={location}/>
-      <div>
+      <div className='resident-container'>
         {
           location?.residents.map(url =>(
             <CartResidents
