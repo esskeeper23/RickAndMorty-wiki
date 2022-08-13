@@ -6,6 +6,7 @@
 
 body {
     background-color: #05292E;
+    font-family: 'Zilla Slab', serif;
 }
 
 .App {
@@ -17,16 +18,20 @@ body {
     height: 250px;
 }
 
+input {
+    width: 250px;
+}
+
 .container-location {
     width: 70%;
-    height: 70px;
+    height: 100px;
     margin: auto;
     background-color: #062226;
     margin-top: 1rem;
     margin-bottom: 2rem;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:center;
 }
 
 .location {
@@ -40,6 +45,13 @@ body {
     display: flex;
     flex-direction: column;
     color: #DFE3E4;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.location-item span {
+    font-size: 22px;
+    margin-bottom: 8px;
 }
 
 .resident-container {
@@ -64,8 +76,9 @@ body {
     align-items: center;
     background-color: #062226;
     color: #FFFFFF;
-    width: 100px;
+    width: 120px;
     padding: .5em;
+    border-radius: 0 5px 5px 0;
 }
 
 .circle {
@@ -86,12 +99,15 @@ body {
 
 .resident-info {
     color: #7E7E7E;
-    margin: 10px 0 5px 1em;
+    margin: 5px 0 5px 1em;
 }
 
 .resident-fetch {
     color: #FBFBFB;
-    margin-left: 1em;
+    margin-left: .7em;
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 20px;
 }
 
 hr {

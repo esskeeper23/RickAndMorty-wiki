@@ -9,7 +9,7 @@ const useFetch = (URL) => {
         .then(res => setResponse(res.data))
         .catch(err => console.log(err))
 
-    }, [])
+    }, [URL])
 
     return response
     
